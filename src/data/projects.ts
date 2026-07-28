@@ -1,0 +1,135 @@
+export interface Project {
+  id: string;
+  title: string;
+  subtitle?: string;
+  href: string;
+  imageSrc: string;
+  imageAlt: string;
+  Tools: string;
+  category: string;
+  year: string;
+  overview: string;
+  liveUrl?: string;
+  secondaryImages?: {
+    topBig?: string;
+    middleLeft?: string;
+    middleRight?: string;
+    bottomBig?: string;
+  };
+
+}
+
+export const projects: Project[] = [
+  {
+    id: "electrohub",
+    title: "ElectroHub",
+    subtitle: "Vista Velvet — Premium E-Commerce Experience",
+    href: "/project-details/electrohub",
+    imageSrc: "/projects/electrohub/electrohub.png",
+    imageAlt: "ElectroHub Luxury E-Commerce Interface Showcase",
+    Tools: "Figma",
+    category: "Web",
+    year: "2025",
+    overview: "ElectroHub is a premium e-commerce web platform engineered to elevate electronics retail into an immersive, clean, and content-driven digital experience. Moving away from data-dense, overwhelming grids, the interface utilizes generous whitespace, refined modern typography, and high-contrast lifestyle product frames to guide user attention naturally. Built with an intuitive icon-driven category navigation, curated trending highlights, and trust-focused brand segments, it presents a highly scannable, minimal, and accessible ecosystem optimized for seamless cross-device exploration.",
+    liveUrl: "https://www.figma.com/proto/qbJbrDvU0WiPwu5SULB2CH/ElectroHub_Website?node-id=1-549&t=3UdkZtL2SLUTw2Bc-1&scaling=contain&content-scaling=responsive&page-id=0%3A1",
+    secondaryImages: {
+      topBig: "/projects/electrohub/electrohub (1).png",
+      bottomBig: "/projects/electrohub/electrohub (2).png",
+     
+    },
+},
+  {
+    id: "jurneo",
+    title: "Jurneo",
+    subtitle: "Premium Travel & Trip Planner",
+    href: "/project-details/jurneo",
+    imageSrc: "/projects/jurneo/jurneo.png",
+    imageAlt: "Jurneo travel mobile application high-fidelity mockup",
+    Tools: "Figma",
+    category: "Mobile App",
+    year: "2026",
+    overview: "An intuitive mobile application designed to solve complex booking structures and trip planning friction. Features custom contextual search flows and lightweight layout screens built for mobile-first responsiveness.",
+    liveUrl: "https://www.figma.com/proto/7fMmjFATdXH44sNWFYkhKl/Final-Cse-study?node-id=282-3899&t=J9HTH2TfT2NTy5Zb-1&scaling=contain&content-scaling=responsive&page-id=282%3A3898",
+    secondaryImages: {
+      topBig: "/projects/jurneo/gallery (3).png",
+      middleLeft: "/projects/jurneo/gallery (1).png",
+      middleRight: "/projects/jurneo/gallery (4).png",
+      bottomBig: "/projects/jurneo/gallery (2).png",
+    },
+  },
+  {
+    id: "kfc-redesign",
+    title: "KFC Redesign",
+    subtitle: "Modern Fast-Food Experience",
+    href: "/project-details/kfc-redesign",
+    imageSrc: "/projects/kfc-redesign/KFC Hero.png",
+    imageAlt: "KFC brand identity and digital interface design",
+    Tools: "VS Code, Claude AI",
+    category: "Web",
+    year: "2026",
+    overview: "This project presents a comprehensive UX/UI redesign of the KFC digital ordering platform, engineered to transform a standard fast-food menu into a modern, high-conversion web application. By eliminating cluttered decision matrices, the interface introduces a streamlined navigation flow—featuring dedicated tabs for localized deals, an intuitive side-by-side menu layout, a friction-free secure checkout, and a highly visual live order tracker. The system emphasizes high-impact food imagery, bold brand typography, and structured layout component blocks to minimize user drop-off and maximize average order value.",
+    liveUrl: "https://kfc-redesign-rho.vercel.app/",
+    secondaryImages: {
+      topBig: "/projects/kfc-redesign/kfc (1).png",
+      middleLeft: "/projects/kfc-redesign/kfc (2).png",
+      middleRight: "/projects/kfc-redesign/kfc (3).png",
+      bottomBig: "/projects/kfc-redesign/kfc (4).png",
+    },
+  },
+  {
+    id: "auraspace",
+    title: "AURASPACE",
+    subtitle: "Real Estate & Property Management",
+    href: "/project-details/auraspace",
+    imageSrc: "/projects/auraspace/auraspace.png",
+    imageAlt: "House Rent Modern Property Discovery & Booking Platform Showcase",
+    Tools: "VS Code, AI-Tools",
+    category: "Web",
+    year: "2026",
+    overview: "House Rent is a full-featured real estate discovery and property rental platform engineered to streamline the house-hunting experience. Designed with a mobile-first responsive layout, it features a visual location filter, interactive amenity tagging, modular property listings with detailed pricing structures, and direct landlord booking flows. Built using semantic HTML, utility-first styling, and modular TypeScript components, the application reduces decision fatigue and offers a frictionless property rental flow across all viewports.",
+    liveUrl: "https://house-rent-sandy.vercel.app/",
+    secondaryImages: {
+      topBig: "/projects/auraspace/gallery (1).png",
+      middleLeft: "/projects/auraspace/gallery (2).png",
+      middleRight: "/projects/auraspace/gallery (3).png",
+      bottomBig: "/projects/auraspace/gallery (4).png",
+    },
+  },
+  {
+    id: "keiton",
+    title: "KEITON",
+    subtitle: "Civic Portal Mobile Architecture",
+    href: "/project-details/keiton",
+    imageSrc: "/projects/keiton/Keiton.png",
+    imageAlt: "Keiton Premium Footwear E-Commerce Homepage Showcase",
+    Tools: "Civic Initiative Redesign",
+    category: "E-Commerce Website",
+    year: "2026",
+    overview: "Keiton is a premium, high-performance footwear e-commerce platform designed to optimize retail conversion through clean grid visual architectures and structured content hierarchies. The application balances editorial design with commercial utility—featuring a bold widescreen lifestyle hero showcase, highly scannable collection entry blocks, micro-interaction-driven product displays with badge callouts, and multi-tier rating columns to cultivate immediate consumer trust. Engineered with semantic HTML and utility-first responsiveness, it delivers an aesthetic, smooth browsing environment optimized for digital shoe discovery.",
+    liveUrl: "https://store-e-commerce-xi.vercel.app/",
+    secondaryImages: {
+      topBig: "/projects/keiton/gallery (1).png",
+      middleLeft: "/projects/keiton/gallery (2).png",
+      middleRight: "/projects/keiton/gallery (3).png",
+      bottomBig: "/projects/keiton/gallery (4).png",
+    },
+  },
+  {
+    id: "legdr",
+    title: "Ledgr",
+    subtitle: "High-End Editorial Design System",
+    href: "/project-details/legdr",
+    imageSrc: "/projects/legdr/Ledgr.png",
+    imageAlt: "Ledgr Financial Analytics & Expense Management Dashboard",
+    Tools: "Aura Creative",
+    category: "Fintech & Web Application",
+    year: "2026",
+    overview: "Ledgr is a modern financial management dashboard engineered to simplify personal expense tracking and cash flow monitoring. The platform balances high-density data visualization with an effortless user experience—featuring a three-column desktop architecture, interactive multi-card carousels, responsive cash flow analytics, and quick-search global navigation (⌘K). Built with modular TypeScript components and utility-first styling, it provides a seamless, accessible interface for managing accounts, budgets, and real-time transaction histories.",
+    liveUrl: "https://ledgr-eta-nine.vercel.app/",
+    secondaryImages: {
+      topBig: "/projects/legdr/gallery (1).png",
+      
+      bottomBig: "/projects/legdr/gallery (2).png",
+    },
+  },
+];
