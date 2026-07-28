@@ -77,22 +77,21 @@ export const projects: Project[] = [
     },
   },
   {
-    id: "auraspace",
-    title: "AURASPACE",
-    subtitle: "Real Estate & Property Management",
-    href: "/project-details/auraspace",
-    imageSrc: "/projects/auraspace/auraspace.png",
-    imageAlt: "House Rent Modern Property Discovery & Booking Platform Showcase",
-    Tools: "VS Code, AI-Tools",
-    category: "Web",
-    year: "2026",
-    overview: "House Rent is a full-featured real estate discovery and property rental platform engineered to streamline the house-hunting experience. Designed with a mobile-first responsive layout, it features a visual location filter, interactive amenity tagging, modular property listings with detailed pricing structures, and direct landlord booking flows. Built using semantic HTML, utility-first styling, and modular TypeScript components, the application reduces decision fatigue and offers a frictionless property rental flow across all viewports.",
-    liveUrl: "https://house-rent-sandy.vercel.app/",
-    secondaryImages: {
-      topBig: "/projects/auraspace/gallery (1).png",
-      middleLeft: "/projects/auraspace/gallery (2).png",
-      middleRight: "/projects/auraspace/gallery (3).png",
-      bottomBig: "/projects/auraspace/gallery (4).png",
+    id: "jurneo",
+  title: "JURNEO: Case Study",
+  subtitle: "Travel & Tour Package Planning App",
+  href: "/project-details/jurneo",
+  imageSrc: "/projects/casestudy/hero.png",
+  imageAlt: "Jurneo Mobile App Case Study Showcase",
+  Tools: "Figma, Auto Layout, Stitch, AI-Tools",
+  category: "UI/UX Case Study",
+  year: "2026",
+  overview: "Jurneo is a mobile-first travel and tour package discovery application designed to solve choice paralysis and hidden booking friction in the travel industry. Built around modular component systems and strict Auto Layout principles, the project features a streamlined homepage visual hierarchy, simplified itinerary breakdowns, transparent pricing structures, and an intuitive step-by-step checkout flow optimized for mobile viewports.",
+  liveUrl: "https://house-rent-sandy.vercel.app/",
+  secondaryImages: {
+    topBig: "/projects/casestudy/1 (1).png",
+    
+    bottomBig: "/projects/casestudy/1 (2).png",
     },
   },
   {
@@ -119,7 +118,7 @@ export const projects: Project[] = [
     title: "Ledgr",
     subtitle: "High-End Editorial Design System",
     href: "/project-details/legdr",
-    imageSrc: "/projects/legdr/Ledgr.png",
+    imageSrc: "/projects/ledgr/1.png",
     imageAlt: "Ledgr Financial Analytics & Expense Management Dashboard",
     Tools: "Aura Creative",
     category: "Fintech & Web Application",
@@ -127,9 +126,9 @@ export const projects: Project[] = [
     overview: "Ledgr is a modern financial management dashboard engineered to simplify personal expense tracking and cash flow monitoring. The platform balances high-density data visualization with an effortless user experience—featuring a three-column desktop architecture, interactive multi-card carousels, responsive cash flow analytics, and quick-search global navigation (⌘K). Built with modular TypeScript components and utility-first styling, it provides a seamless, accessible interface for managing accounts, budgets, and real-time transaction histories.",
     liveUrl: "https://ledgr-eta-nine.vercel.app/",
     secondaryImages: {
-      topBig: "/projects/legdr/gallery (1).png",
+      topBig: "/projects/ledgr/2 (1).png",
       
-      bottomBig: "/projects/legdr/gallery (2).png",
+      bottomBig: "/projects/ledgr/2 (2).png",
     },
   },
 ];

@@ -2,60 +2,93 @@
 
 import Container from "@/components/ui/Container";
 
-export default function SkillsAndAwards() {
-  const skills = [
-    "Web Design",
-    "No-Code Development",
-    "UI/UX Design",
+interface ToolItem {
+  name: string;
+  description: string;
+}
+
+export default function ExpressToolkit() {
+  const designTools: ToolItem[] = [
+    {
+      name: "Figma AI / Stitch",
+      description: "Generates editable vector layouts and design systems.",
+    },
+    {
+      name: "Galileo AI / Visily",
+      description: "Converts text prompts into full UI mockups and interactive prototypes.",
+    },
+    {
+      name: "Relume AI",
+      description: "Automates sitemaps and wireframe component architecture.",
+    },
   ];
 
-  const awards = [
-    "3x Site of the Day — Awwwards",
-    "1x Young Ones ADC Gold",
-    "Product Design Champion",
+  const codeTools: ToolItem[] = [
+    {
+      name: "v0 (by Vercel)",
+      description: "Converts images/prompts to production-ready React + Tailwind code.",
+    },
+    {
+      name: "Cursor / Antigravity",
+      description: "AI-native editor for agentic refactoring and multi-file code gen.",
+    },
+    {
+      name: "Builder.io Visual Copilot",
+      description: "Transpiles Figma components directly to production code.",
+    },
   ];
 
   return (
     <section className="w-full bg-background py-8 sm:py-12 lg:py-16">
       <Container>
         
-        {/* Section Heading mapped to fluid t-display */}
-        <h2 id="skills-title" className="t-display text-foreground mb-12 md:mb-16">
-          Skills &amp; Awards
+        {/* Section Heading */}
+        <h2 id="toolkit-title" className="t-display text-foreground mb-12 md:mb-16 uppercase">
+          Express Toolkit
         </h2>
 
         {/* List Content Wrapper */}
         <div className="flex flex-col md:flex-row gap-12 md:gap-16 lg:gap-24">
           
-          {/* Key Skills Column */}
+          {/* AI Design Tools Column */}
           <div className="flex-1">
-            <h3 className="t-label text-muted mb-4 md:mb-6">
-              Key Skills
+            <h3 className="t-label text-muted mb-4 md:mb-6 uppercase">
+              AI Design Tools
             </h3>
             <div className="flex flex-col">
-              {skills.map((skill, index) => (
+              {designTools.map((tool, index) => (
                 <div
                   key={index}
-                  className="t-heading text-foreground py-4 md:py-6 border-t border-border last:border-b"
+                  className="py-4 md:py-6 border-t border-border last:border-b"
                 >
-                  {skill}
+                  <div className="t-heading text-foreground font-semibold">
+                    {tool.name}
+                  </div>
+                  <p className="t-subtext text-muted text-sm mt-1">
+                    {tool.description}
+                  </p>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Awards Column */}
+          {/* AI Code Tools Column */}
           <div className="flex-1">
-            <h3 className="t-label text-muted mb-4 md:mb-6">
-              Awards
+            <h3 className="t-label text-muted mb-4 md:mb-6 uppercase">
+              AI Code Tools
             </h3>
             <div className="flex flex-col">
-              {awards.map((award, index) => (
+              {codeTools.map((tool, index) => (
                 <div
                   key={index}
-                  className="t-heading text-foreground py-4 md:py-6 border-t border-border last:border-b"
+                  className="py-4 md:py-6 border-t border-border last:border-b"
                 >
-                  {award}
+                  <div className="t-heading text-foreground font-semibold">
+                    {tool.name}
+                  </div>
+                  <p className="t-subtext text-muted text-sm mt-1">
+                    {tool.description}
+                  </p>
                 </div>
               ))}
             </div>

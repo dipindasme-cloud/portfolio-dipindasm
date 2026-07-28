@@ -56,7 +56,7 @@ export default function AboutMeSection() {
               md:aspect-[3/4]
             ">
               <Image
-                src="/images/profile-hero.png"
+                src="/images/profile-hero.jpg"
                 alt="Clear Image of Dipindas"
                 fill
                 sizes="(max-width: 768px) 100vw, 400px"
