@@ -109,7 +109,7 @@ export const projects: Project[] = [
     secondaryImages: {
       topBig: "/projects/keiton/gallery (1).png",
       
-      bottomBig: "/projects/keiton/gallery (4).png",
+      bottomBig: "/projects/keiton/gallery (2).png",
     },
   },
   {
