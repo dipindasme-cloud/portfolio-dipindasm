@@ -99,7 +99,7 @@ export const projects: Project[] = [
     title: "KEITON",
     subtitle: "Civic Portal Mobile Architecture",
     href: "/project-details/keiton",
-    imageSrc: "/projects/keiton/Keiton.png",
+    imageSrc: "/projects/keiton/keiton.png",
     imageAlt: "Keiton Premium Footwear E-Commerce Homepage Showcase",
     Tools: "Civic Initiative Redesign",
     category: "E-Commerce Website",
@@ -108,8 +108,7 @@ export const projects: Project[] = [
     liveUrl: "https://store-e-commerce-xi.vercel.app/",
     secondaryImages: {
       topBig: "/projects/keiton/gallery (1).png",
-      middleLeft: "/projects/keiton/gallery (2).png",
-      middleRight: "/projects/keiton/gallery (3).png",
+      
       bottomBig: "/projects/keiton/gallery (4).png",
     },
   },
