@@ -58,11 +58,7 @@ export const projects: Project[] = [
     },
   },
 
-
-
-
-
-  {
+{
     id: "kfc-redesign",
     title: "KFC Redesign",
     subtitle: "Modern Fast-Food Experience",
@@ -90,7 +86,7 @@ export const projects: Project[] = [
     imageSrc: "/projects/jurneo/jurneo.png",
     imageAlt: "Jurneo travel mobile application high-fidelity mockup",
     Tools: "Figma",
-    category: "Mobile App",
+    category: "Mobile App : Case Study",
     year: "2026",
     overview: "An intuitive mobile application designed to solve complex booking structures and trip planning friction. Features custom contextual search flows and lightweight layout screens built for mobile-first responsiveness.",
     liveUrl: "https://www.figma.com/proto/7fMmjFATdXH44sNWFYkhKl/Final-Cse-study?node-id=282-3899&t=J9HTH2TfT2NTy5Zb-1&scaling=contain&content-scaling=responsive&page-id=282%3A3898",
@@ -126,7 +122,7 @@ export const projects: Project[] = [
   title: "AUROSPACE",
   subtitle: "Luxury Real Estate & Long-Term Rental Platform",
   href: "/project-details/aurospace",
-  imageSrc: "/projects/aurospace/aurospace.png",
+  imageSrc: "/projects/aurospace/hero.png",
   imageAlt: "AuroSpace Luxury Real Estate Landing Page Showcase",
   Tools: "Real Estate & Asset Management UI",
   category: "Web Application",
@@ -134,11 +130,15 @@ export const projects: Project[] = [
   overview: "AuroSpace is an ultra-premium, long-term residential rental platform engineered to streamline high-end property discovery across premier metro locations. Built with clean visual hierarchy, low-friction navigation, and curated asset cards, the platform bridges deep real estate intelligence with high-conversion UI/UX. The web architecture features a location-and-budget-driven hero search engine, social proof metrics, a structured 4-step onboarding journey, interactive filter controls, and dynamic listing displays tailored for high-net-worth individuals, expats, and luxury tenants.",
   liveUrl: "https://house-rent-sandy.vercel.app/",
   secondaryImages: {
-    topBig: "/projects/aurospace/gallery (1).png",
-    bottomBig: "/projects/aurospace/gallery (2).png",
+    topBig: "/projects/aurospace/1 (1).png",
+    bottomBig: "/projects/aurospace/1 (2).png",
     },
   },
   
   
   
 ];
+
+
+
+  
