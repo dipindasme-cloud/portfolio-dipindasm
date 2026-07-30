@@ -107,7 +107,7 @@ export const projects: Project[] = [
     imageAlt: "ElectroHub Luxury E-Commerce Interface Showcase",
     Tools: "Figma",
     category: "Web",
-    year: "2025",
+    year: "2026",
     overview: "ElectroHub is a premium e-commerce web platform engineered to elevate electronics retail into an immersive, clean, and content-driven digital experience. Moving away from data-dense, overwhelming grids, the interface utilizes generous whitespace, refined modern typography, and high-contrast lifestyle product frames to guide user attention naturally. Built with an intuitive icon-driven category navigation, curated trending highlights, and trust-focused brand segments, it presents a highly scannable, minimal, and accessible ecosystem optimized for seamless cross-device exploration.",
     liveUrl: "https://www.figma.com/proto/qbJbrDvU0WiPwu5SULB2CH/ElectroHub_Website?node-id=1-549&t=3UdkZtL2SLUTw2Bc-1&scaling=contain&content-scaling=responsive&page-id=0%3A1",
     secondaryImages: {
