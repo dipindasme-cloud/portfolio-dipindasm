@@ -128,7 +128,7 @@ export const projects: Project[] = [
   category: "Web Application",
   year: "2026",
   overview: "AuroSpace is an ultra-premium, long-term residential rental platform engineered to streamline high-end property discovery across premier metro locations. Built with clean visual hierarchy, low-friction navigation, and curated asset cards, the platform bridges deep real estate intelligence with high-conversion UI/UX. The web architecture features a location-and-budget-driven hero search engine, social proof metrics, a structured 4-step onboarding journey, interactive filter controls, and dynamic listing displays tailored for high-net-worth individuals, expats, and luxury tenants.",
-  liveUrl: "https://aurospacerealestate.vercel.app/",
+  liveUrl: "https://kfc-redesign-rho.vercel.app/",
   secondaryImages: {
     topBig: "/projects/aurospace/1 (1).png",
     bottomBig: "/projects/aurospace/1 (2).png",
