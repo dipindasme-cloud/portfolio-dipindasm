@@ -38,7 +38,14 @@ export default async function ProjectDetailsPage({ params }: PageProps) {
           {/* 2. Animated Headline with Hero Image */}
 <section className="w-full pt-24 pb-8 sm:pt-32 sm:pb-12 lg:pt-36 lg:pb-16">
   <Container className="flex flex-col gap-6 md:gap-8 lg:gap-12"> 
-    <TextGenerateEffect words={project.title} as="h1" className="t-display-hero text-foreground" />
+    <div className="flex flex-col gap-2 md:gap-3">
+      <TextGenerateEffect words={project.title} as="h1" className="t-display-hero text-foreground" />
+      {project.subtitle && (
+        <p className="t-body-lg text-muted max-w-[44rem]">
+          {project.subtitle}
+        </p>
+      )}
+    </div>
     <div className="relative w-full aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-md border border-border bg-foreground/[0.02]">
       <Image
         src={project.imageSrc}
