@@ -21,14 +21,15 @@ export default function CTAButton({
   // Custom variant configurations tailored for modern minimalist interfaces
   const styleConfig = {
     header: {
-      buttonClass: "border-foreground/10 bg-transparent hover:border-foreground/40 text-foreground",
-      textDefault: "text-muted-400",
+      
+      buttonClass: "border-foreground bg-transparent hover:border-foreground text-foreground",
+      textDefault: "text-foreground/70",
       textHover: "text-foreground",
       iconClass: "text-foreground",
     },
     main: {
-      buttonClass: "border-foreground/20 bg-transparent hover:border-foreground text-foreground",
-      textDefault: "text-foreground/70",
+      buttonClass: "border-foreground/10 bg-transparent hover:border-foreground/40 text-foreground",
+      textDefault: "text-muted-400",
       textHover: "text-foreground",
       iconClass: "text-foreground",
     },

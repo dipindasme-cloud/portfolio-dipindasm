@@ -26,7 +26,7 @@ export const projects: Project[] = [
     href: "/project-details/legdr",
     imageSrc: "/projects/ledgr/1.png",
     imageAlt: "Ledgr Financial Analytics & Expense Management Dashboard",
-    Tools: "Next.js, TypeScript, Recharts",
+    Tools: "Next.js 15, Recharts",
     category: "Fintech Application",
     year: "2026",
     overview:
@@ -43,15 +43,15 @@ export const projects: Project[] = [
   {
     id: "keiton",
     title: "KEITON",
-    subtitle: "Civic Portal Mobile Architecture",
+    subtitle: "High-Performance Footwear & Athletic E-Commerce Ecosystem",
     href: "/project-details/keiton",
     imageSrc: "/projects/keiton/keiton.png",
     imageAlt: "Keiton Premium Footwear E-Commerce Homepage Showcase",
-    Tools: "Civic Initiative Redesign",
-    category: "E-Commerce Website",
+    Tools: "Next.js 15, Tailwind CSS v4",
+    category: "E-Commerce",
     year: "2026",
     overview:
-      "Keiton is a premium, high-performance footwear e-commerce platform designed to optimize retail conversion through clean grid visual architectures and structured content hierarchies. The application balances editorial design with commercial utility—featuring a bold widescreen lifestyle hero showcase, highly scannable collection entry blocks, micro-interaction-driven product displays with badge callouts, and multi-tier rating columns to cultivate immediate consumer trust. Engineered with semantic HTML and utility-first responsiveness, it delivers an aesthetic, smooth browsing environment optimized for digital shoe discovery.",
+      "KEITON is a high-performance e-commerce application engineered for premium athletic footwear and streetwear discovery. Designed to maximize retail conversion, the platform blends high-impact editorial heroes with conversion-focused visual architectures—featuring interactive category gateways, customizable sidebar product filters, micro-interaction drop counters, and structured brand ecosystem carousels. Built with Next.js and Tailwind CSS, it incorporates social proof metrics, verified customer review grids, and high-contrast product cards optimized for seamless cross-device exploration.",
     liveUrl: "https://store-e-commerce-xi.vercel.app/",
     secondaryImages: {
       topBig: "/projects/keiton/gallery (1).png",
@@ -63,15 +63,15 @@ export const projects: Project[] = [
   {
     id: "kfc-redesign",
     title: "KFC Redesign",
-    subtitle: "Modern Fast-Food Experience",
+    subtitle: "High-Conversion Fast-Food Ordering & Digital Menu System",
     href: "/project-details/kfc-redesign",
     imageSrc: "/projects/kfc-redesign/KFC Hero.png",
     imageAlt: "KFC brand identity and digital interface design",
-    Tools: "VS Code, Claude AI",
-    category: "Web",
+    Tools: "Next.js 15, VS Code",
+    category: "Web Application",
     year: "2026",
     overview:
-      "This project presents a comprehensive UX/UI redesign of the KFC digital ordering platform, engineered to transform a standard fast-food menu into a modern, high-conversion web application. By eliminating cluttered decision matrices, the interface introduces a streamlined navigation flow—featuring dedicated tabs for localized deals, an intuitive side-by-side menu layout, a friction-free secure checkout, and a highly visual live order tracker. The system emphasizes high-impact food imagery, bold brand typography, and structured layout component blocks to minimize user drop-off and maximize average order value.",
+      "A modern, conversion-focused web app redesign of the KFC digital ordering platform. Engineered to eliminate decision fatigue, the interface features a localized location bar, high-impact hero product releases, and quick-add Bestseller grids with clear dietary & promotional callouts. The layout incorporates dynamic offer application cards (such as direct coupon-code redemption) and bold brand typography designed to reduce cart abandonment and increase average order value.",
     liveUrl: "https://kfc-redesign-rho.vercel.app/",
     secondaryImages: {
       topBig: "/projects/kfc-redesign/kfc (1).png",
@@ -84,15 +84,15 @@ export const projects: Project[] = [
   {
     id: "jurneo",
     title: "Jurneo",
-    subtitle: "Premium Travel & Trip Planner",
+    subtitle: "End-to-End Travel Planning & Itinerary UX Case Study",
     href: "/project-details/jurneo",
     imageSrc: "/projects/jurneo/jurneo.png",
     imageAlt: "Jurneo travel mobile application high-fidelity mockup",
     Tools: "Figma",
-    category: "Mobile App : Case Study",
+    category: "Figma, Material 3 Guidelines, Auto Layout",
     year: "2026",
     overview:
-      "An intuitive mobile application designed to solve complex booking structures and trip planning friction. Features custom contextual search flows and lightweight layout screens built for mobile-first responsiveness.",
+      "Jurneo is a comprehensive UX/UI case study designed to eliminate cognitive overload and fragmented decision-making in travel planning. By unifying destination discovery, transparent pricing breakdowns, interactive day-by-day itineraries, flight/stay selections, and instant digital QR ticketing into a single seamless flow, Jurneo reduces decision-making time by 75% and workflow fragmentation by 60%. Crafted with strict visual hierarchy using Poppins and Inter typography systems.",
     liveUrl:
       "https://www.figma.com/proto/7fMmjFATdXH44sNWFYkhKl/Final-Cse-study?node-id=282-3899&t=J9HTH2TfT2NTy5Zb-1&scaling=contain&content-scaling=responsive&page-id=282%3A3898",
     secondaryImages: {
@@ -106,15 +106,15 @@ export const projects: Project[] = [
   {
     id: "electrohub",
     title: "ElectroHub",
-    subtitle: "Vista Velvet — Premium E-Commerce Experience",
+    subtitle: "Minimalist Consumer Electronics E-Commerce Platform",
     href: "/project-details/electrohub",
     imageSrc: "/projects/electrohub/electrohub.png",
     imageAlt: "ElectroHub Luxury E-Commerce Interface Showcase",
-    Tools: "Figma",
-    category: "Web",
+    Tools: "Figma, Auto Layout",
+    category: "Web Design",
     year: "2026",
     overview:
-      "ElectroHub is a premium e-commerce web platform engineered to elevate electronics retail into an immersive, clean, and content-driven digital experience. Moving away from data-dense, overwhelming grids, the interface utilizes generous whitespace, refined modern typography, and high-contrast lifestyle product frames to guide user attention naturally. Built with an intuitive icon-driven category navigation, curated trending highlights, and trust-focused brand segments, it presents a highly scannable, minimal, and accessible ecosystem optimized for seamless cross-device exploration.",
+      "ElectroHub is a high-end electronics e-commerce UI system designed to elevate tech retail through clean visual architecture and content-first layout hierarchy. Moving away from cluttered grids, the platform utilizes generous whitespace, refined typography, rating tags, color swatch selectors, and flexible EMI breakdown cards. The interface features intuitive brand filters, item spec badges, and detailed product-page layouts engineered to guide purchasing confidence across desktop and mobile screens.",
     liveUrl:
       "https://www.figma.com/proto/qbJbrDvU0WiPwu5SULB2CH/ElectroHub_Website?node-id=1-549&t=3UdkZtL2SLUTw2Bc-1&scaling=contain&content-scaling=responsive&page-id=0%3A1",
     secondaryImages: {
@@ -130,7 +130,7 @@ export const projects: Project[] = [
     href: "/project-details/aurospace",
     imageSrc: "/projects/aurospace/hero.png",
     imageAlt: "AuroSpace Luxury Real Estate Landing Page Showcase",
-    Tools: "VS Code, DeepSeek",
+    Tools: "Next.js 15, VS Code",
     category: "Web Application",
     year: "2026",
     overview:

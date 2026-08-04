@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { useRef, useState } from "react";
+import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import RollUpText from "@/components/ui/RollUpText";
 import CTAButton from "../ui/CTAButton";
 import Container from "../ui/Container";
@@ -14,9 +14,31 @@ const navLinks = [
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const prevScroll = useRef(0);
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const prev = prevScroll.current;
+    const scrollingUp = latest < prev;
+    const show = scrollingUp || latest <= 120;
+    prevScroll.current = latest;
+    setHidden(!show);
+  });
+
+  const handleMenuToggle = () => {
+    setMenuOpen((open) => {
+      if (!open) setHidden(false);
+      return !open;
+    });
+  };
 
   return (
-    <header className="fixed top-0 left-0 z-50 w-full bg-background py-4 sm:py-5 lg:py-6">
+    <motion.header
+      className="fixed top-0 left-0 z-50 w-full bg-background py-4 sm:py-5 lg:py-6"
+      animate={{ y: hidden && !menuOpen ? "-100%" : 0 }}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
+    >
       
       <Container className="flex items-center justify-between">
         
@@ -49,7 +71,7 @@ export default function Header() {
         {/* Mobile Hamburger Button */}
         <button
           className="flex h-[2.75rem] w-[2.75rem] flex-col items-center justify-center gap-[0.35rem] rounded-md border border-transparent transition-colors hover:bg-foreground/[0.04] md:hidden"
-          onClick={() => setMenuOpen(!menuOpen)}
+          onClick={handleMenuToggle}
           aria-label={menuOpen ? "Close menu" : "Open menu"}
           aria-expanded={menuOpen}
         >
@@ -105,6 +127,6 @@ export default function Header() {
           </motion.nav>
         )}
       </AnimatePresence>
-    </header>
+    </motion.header>
   );
 }

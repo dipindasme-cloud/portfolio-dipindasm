@@ -1,8 +1,9 @@
-import ContactSection from "@/components/contactpage/Contact";
+import Contact from "@/components/contactpage/Contact";
+
 export default function Home() {
   return (
     <main className="flex-1">
-      <ContactSection />
+      <Contact />
     </main>
   );
 }

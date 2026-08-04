@@ -1,5 +1,7 @@
 "use client";
 
+import { useRef, useState } from "react";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import Link from "next/link";
 import RollUpText from "@/components/ui/RollUpText";
 import CTAButton from "../ui/CTAButton";
@@ -12,8 +14,24 @@ const navLinks = [
 ];
 
 export default function ProjectDetailsHeader() {
+  const [hidden, setHidden] = useState(false);
+  const prevScroll = useRef(0);
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const prev = prevScroll.current;
+    const scrollingUp = latest < prev;
+    const show = scrollingUp || latest <= 120;
+    prevScroll.current = latest;
+    setHidden(!show);
+  });
+
   return (
-    <header className="fixed top-0 left-0 z-50 w-full bg-background py-4 sm:py-5 lg:py-6">
+    <motion.header
+      className="fixed top-0 left-0 z-50 w-full bg-background py-4 sm:py-5 lg:py-6"
+      animate={{ y: hidden ? "-100%" : 0 }}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
+    >
       
       {/* 1. Desktop Layout System (Visible at >= 768px) */}
       <div className="hidden md:block w-full">
@@ -70,6 +88,6 @@ export default function ProjectDetailsHeader() {
         </div>
       </div>
 
-    </header>
+    </motion.header>
   );
 }
