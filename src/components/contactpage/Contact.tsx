@@ -20,7 +20,7 @@ export default function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [status, setStatus] = useState<StatusState | null>(null);
 
-  // Measure time starting from the user's FIRST keystroke/input rather than page load
+  // Measure time starting from the user's FIRST keystroke/input
   const interactionStartTimeRef = useRef<number | null>(null);
 
   const handleInputChange = (
@@ -46,8 +46,7 @@ export default function ContactSection() {
     setIsSubmitting(true);
     setStatus(null);
 
-    // 1. SPAM DEFENSE: Honeypot check
-    // If the hidden checkbox was checked, silently reject (fake success for bots)
+    // 1. CLIENT SPAM DEFENSE: Honeypot check
     if (formData.botcheck) {
       setIsSubmitting(false);
       setStatus({ type: "success", message: "Message sent successfully!" });
@@ -55,8 +54,7 @@ export default function ContactSection() {
       return;
     }
 
-    // 2. SPAM DEFENSE: Typing speed check
-    // If submission happens under 1.2s from the FIRST keystroke, treat as automated script
+    // 2. CLIENT SPAM DEFENSE: Typing speed check (< 1.2s)
     if (interactionStartTimeRef.current) {
       const elapsedTime = (Date.now() - interactionStartTimeRef.current) / 1000;
       if (elapsedTime < 1.2) {
@@ -67,40 +65,20 @@ export default function ContactSection() {
       }
     }
 
-    // Access key from environment variables
-    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
-    if (!accessKey) {
-      setStatus({
-        type: "error",
-        message: "Configuration error: Missing Access Key.",
-      });
-      setIsSubmitting(false);
-      return;
-    }
-
-    // Build payload using controlled state
-    const payload = {
-      access_key: accessKey,
-      name: formData.name,
-      email: formData.email,
-      message: formData.message,
-      subject: `New Portfolio Contact from ${formData.name}`,
-      from_name: "Portfolio Contact Form",
-    };
-
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      // Send form data to internal Next.js API route
+      const res = await fetch("/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: JSON.stringify(payload),
+        body: JSON.stringify(formData),
       });
 
-      const result = await response.json();
+      const result = await res.json();
 
-      if (result.success) {
+      if (res.ok && result.success) {
         setStatus({
           type: "success",
           message: "Thank you! Your message has been sent.",
@@ -113,7 +91,7 @@ export default function ContactSection() {
           message: result.message || "Something went wrong. Please try again.",
         });
       }
-    } catch (error) {
+    } catch (_err) {
       setStatus({
         type: "error",
         message: "Network error. Please check your connection and try again.",
@@ -143,7 +121,7 @@ export default function ContactSection() {
         <div className="w-full max-w-[32rem]">
           <form onSubmit={handleSubmit} className="flex flex-col gap-6">
 
-            {/* SPAM DEFENSE: Honeypot Input (hidden from human UI & screen readers) */}
+            {/* SPAM DEFENSE: Honeypot Input */}
             <input
               type="checkbox"
               name="botcheck"

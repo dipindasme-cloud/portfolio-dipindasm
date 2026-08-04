@@ -16,34 +16,34 @@ export default function Footer() {
           
           {/* LinkedIn Direct Link (Pill Style) */}
           <div className="flex items-center gap-4 md:gap-6">
-            <a
-              href="https://www.linkedin.com/in/nandu-das-95/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn Profile"
-              className="
-                flex items-center justify-center 
-                w-16 h-16 md:w-20 md:h-20
-                bg-white/[0.05] border border-transparent 
-                hover:border-muted-600 hover:bg-white/[0.08]
-                text-foreground transition-all duration-300 ease-out
-                hover:scale-[1.05] active:scale-[0.95]
-                rounded-sm
-              "
-            >
-              <span className="w-7 h-7 md:w-9 md:h-9 flex items-center justify-center">
-                {/* Official LinkedIn SVG Icon */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 256 256"
-                  fill="currentColor"
-                  className="w-full h-full"
-                >
-                  <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24ZM96,176a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0ZM88,96a12,12,0,1,1,12-12A12,12,0,0,1,88,96Zm96,80a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A35.89,35.89,0,0,1,184,136Z" />
-                </svg>
-              </span>
-            </a>
-          </div>
+  <a
+    href="https://www.linkedin.com/messaging/thread/new?recipient=dipindas-mohanadas"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Message me on LinkedIn"
+    className="
+      flex items-center justify-center 
+      w-16 h-16 md:w-20 md:h-20
+      bg-white/[0.05] border border-transparent 
+      hover:border-muted-600 hover:bg-white/[0.08]
+      text-foreground transition-all duration-300 ease-out
+      hover:scale-[1.05] active:scale-[0.95]
+      rounded-sm
+    "
+  >
+    <span className="w-7 h-7 md:w-9 md:h-9 flex items-center justify-center">
+      {/* Official LinkedIn SVG Icon */}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 256 256"
+        fill="currentColor"
+        className="w-full h-full"
+      >
+        <path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24ZM96,176a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0ZM88,96a12,12,0,1,1,12-12A12,12,0,0,1,88,96Zm96,80a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A35.89,35.89,0,0,1,184,136Z" />
+      </svg>
+    </span>
+  </a>
+</div>
 
           {/* Large "Let's Talk" Contact CTA */}
           <Link

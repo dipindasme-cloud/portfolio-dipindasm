@@ -1,13 +1,5 @@
 import Container from "@/components/ui/Container";
 
-const education = {
-  degree: "Bachelor of Design",
-  school: "University of Creative Arts",
-  period: "2019 — 2023",
-  description:
-    "Focused on UI/UX design, interaction design, and visual communication. Graduated with honours and developed a strong foundation in user-centered design methodologies.",
-};
-
 export default function Education() {
   return (
     <section className="w-full bg-background pb-8 sm:pb-12 lg:pb-16">

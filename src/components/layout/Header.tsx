@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import Link from "next/link";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import RollUpText from "@/components/ui/RollUpText";
 import CTAButton from "../ui/CTAButton";
@@ -43,19 +44,19 @@ export default function Header() {
       <Container className="flex items-center justify-between">
         
         {/* Logo / Brand */}
-        <a
-          href="/."
+        <Link
+          href="/"
           className="t-subheading font-medium tracking-tight text-foreground transition-opacity hover:opacity-80"
         >
           Dipindas M
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-[1.5rem] md:flex">
           {navLinks.map((link) => (
-            <a key={link.href} href={link.href} className="focus-visible:outline-none">
+            <Link key={link.href} href={link.href} className="focus-visible:outline-none">
               <RollUpText label={link.label} />
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -104,14 +105,14 @@ export default function Header() {
             className="absolute top-full left-0 flex w-full flex-col gap-[1rem] border-b border-border bg-background/95 backdrop-blur-lg px-[1rem] py-[1.5rem] md:px-[2rem]"
           >
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
                 className="t-body-sm min-h-[2.75rem] flex items-center justify-center text-muted-400 transition-colors hover:text-foreground"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
             <div
               className="w-full mt-[0.5rem] min-h-[2.75rem]"

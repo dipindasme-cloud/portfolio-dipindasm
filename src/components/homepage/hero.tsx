@@ -28,7 +28,7 @@ export default function Hero() {
           <div className="w-full md:w-auto flex justify-start md:justify-end shrink-0">
             <figure className="w-full overflow-hidden border border-border rounded-sm h-[42dvh] max-h-[24rem] aspect-[4/5] sm:aspect-[16/10] md:h-72 md:max-h-none md:aspect-auto md:max-w-[14rem]">
               <NextImage
-                src="/images/profile-hero.jpg"
+                src="/images/profile-hero.webp"
                 alt="Dipindas M portrait artwork"
                 width={640}
                 height={800}

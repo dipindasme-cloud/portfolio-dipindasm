@@ -1,13 +1,5 @@
 import Container from "@/components/ui/Container";
 
-const experience = {
-  role: "UI/UX Designer",
-  company: "Tech Studio",
-  period: "2023 — Present",
-  description:
-    "Designing and shipping user-centered digital products — from wireframes to high-fidelity prototypes. Collaborating closely with developers to ensure pixel-perfect implementation and cohesive brand experiences.",
-};
-
 export default function Experience() {
   return (
     <section className="w-full bg-background pb-8 sm:pb-12 lg:pb-16">
