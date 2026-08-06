@@ -86,20 +86,20 @@ export const projects: Project[] = [
     title: "Jurneo",
     subtitle: "End-to-End Travel Planning & Itinerary UX Case Study",
     href: "/project-details/jurneo",
-    imageSrc: "/projects/jurneo/jurneo.png",
+    imageSrc: "/projects/jurneo/journeo.png",
     imageAlt: "Jurneo travel mobile application high-fidelity mockup",
     Tools: "Figma",
-    category: "Figma, Material 3 Guidelines, Auto Layout",
+    category: "HTML,Figma, Auto Layout",
     year: "2026",
     overview:
       "Jurneo is a comprehensive UX/UI case study designed to eliminate cognitive overload and fragmented decision-making in travel planning. By unifying destination discovery, transparent pricing breakdowns, interactive day-by-day itineraries, flight/stay selections, and instant digital QR ticketing into a single seamless flow, Jurneo reduces decision-making time by 75% and workflow fragmentation by 60%. Crafted with strict visual hierarchy using Poppins and Inter typography systems.",
     liveUrl:
-      "https://www.figma.com/proto/7fMmjFATdXH44sNWFYkhKl/Final-Cse-study?node-id=282-3899&t=J9HTH2TfT2NTy5Zb-1&scaling=contain&content-scaling=responsive&page-id=282%3A3898",
+      "https://casestudy-jurneo.vercel.app/",
     secondaryImages: {
-      topBig: "/projects/jurneo/gallery (3).png",
+      topBig: "/projects/jurneo/gallery (2).png",
       middleLeft: "/projects/jurneo/gallery (1).png",
-      middleRight: "/projects/jurneo/gallery (4).png",
-      bottomBig: "/projects/jurneo/gallery (2).png",
+      middleRight: "/projects/jurneo/gallery (3).png",
+      bottomBig: "/projects/jurneo/gallery (4).png",
     },
   },
 
@@ -125,7 +125,7 @@ export const projects: Project[] = [
 
   {
     id: "aurospace",
-    title: "AUROSPACE",
+    title: "AuroSpace",
     subtitle: "Luxury Real Estate & Long-Term Rental Platform",
     href: "/project-details/aurospace",
     imageSrc: "/projects/aurospace/hero.png",
