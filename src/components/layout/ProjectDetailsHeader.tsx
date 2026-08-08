@@ -58,7 +58,7 @@ export default function ProjectDetailsHeader() {
           <div>
             <CTAButton 
               label="Let's Talk" 
-              href="/contact" 
+              href="#footer" 
               variant="header" 
             />
           </div>

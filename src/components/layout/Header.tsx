@@ -64,7 +64,7 @@ export default function Header() {
         <div className="hidden md:block">
           <CTAButton 
             label="Let's Talk" 
-            href="/contact" 
+            href="#footer" 
             variant="header" 
           />
         </div>
@@ -119,7 +119,7 @@ export default function Header() {
               onClick={() => setMenuOpen(false)}
             >
               <CTAButton
-                href="/contact"
+                href="#footer"
                 label="Let's Talk"
                 variant="mobile"
                 className="w-full h-full"

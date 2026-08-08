@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import RollUpText from "@/components/ui/RollUpText";
 import Container from "@/components/ui/Container";
 
@@ -8,7 +7,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full bg-background pt-16 pb-12 sm:pt-20 sm:pb-16 lg:pt-24 lg:pb-16">
+    <footer id="footer" className="w-full bg-background pt-16 pb-12 sm:pt-20 sm:pb-16 lg:pt-24 lg:pb-16">
       {/* Footer Container */}
       <Container className="flex flex-col gap-12 md:gap-16 lg:gap-20">
         {/* Top Section: CTA & LinkedIn Navigation */}
@@ -46,8 +45,7 @@ export default function Footer() {
 </div>
 
           {/* Large "Let's Talk" Contact CTA */}
-          <Link
-            href="/contact"
+          <div
             className="group inline-flex items-center gap-4 md:gap-6 lg:gap-8 border-b-4 border-foreground pb-2 lg:pb-4 transition-all duration-300"
           >
             <RollUpText
@@ -63,7 +61,7 @@ export default function Footer() {
             >
               <path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z" />
             </svg>
-          </Link>
+          </div>
         </div>
 
         {/* Bottom Copyright Note */}
