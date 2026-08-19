@@ -6,6 +6,7 @@ import ProjectDetailsHeader from "@/components/layout/ProjectDetailsHeader";
 import Footer from "@/components/layout/Footer";
 import { TextGenerateEffect } from "@/components/ui/TextReveal";
 import Container from "@/components/ui/Container";
+import ProjectStorySection from "@/components/projectdetails/ProjectStorySection";
 
 interface PageProps {
   params: Promise<{ id: string }>;
@@ -110,6 +111,9 @@ export default async function ProjectDetailsPage({ params }: PageProps) {
             </div>
           </Container>
         </section>
+
+        {/* 4b. Project Story */}
+        <ProjectStorySection project={project} />
 
         {/* 5. Secondary Showcase Media Grid */}
         <section
