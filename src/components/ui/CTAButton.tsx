@@ -6,8 +6,8 @@ import RollUpText from "./RollUpText"; // Make sure the path matches your RollUp
 interface CTAButtonProps {
   label: string;
   href: string;
-  /** 'header' for subtle navigation, 'main' for transparent frames, 'mobile' for solid full-width/overlay states */
-  variant?: "header" | "main" | "mobile";
+  /** 'header' for subtle navigation, 'primary' for prominent calls-to-action, 'main' for transparent frames, 'mobile' for solid full-width/overlay states */
+  variant?: "header" |"primary"| "main" | "mobile";
   className?: string;
 }
 
@@ -26,6 +26,12 @@ export default function CTAButton({
       textDefault: "text-foreground/70",
       textHover: "text-foreground",
       iconClass: "text-foreground",
+    },
+    primary: {
+      buttonClass: "border-foreground bg-foreground hover:bg-foreground/90 text-background",
+      textDefault: "text-background",
+      textHover: "text-background/90",
+      iconClass: "text-background",
     },
     main: {
       buttonClass: "border-foreground/10 bg-transparent hover:border-foreground/40 text-foreground",

@@ -50,6 +50,17 @@ export default async function ProjectDetailsPage({ params }: PageProps) {
                 </p>
               )}
             </div>
+            {project.liveUrl && (
+                  <div className="flex items-center pt-2">
+                   
+                    <CTAButton
+                      label="View Live"
+                      href={project.liveUrl}
+                      variant="primary"
+                      className="px-4 py-1.5"
+                    />
+                  </div>
+                )}
             <div className="relative w-full aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-md border border-border bg-foreground/[0.02]">
               <Image
                 src={project.imageSrc}
@@ -96,17 +107,7 @@ export default async function ProjectDetailsPage({ params }: PageProps) {
                   </div>
                 </div>
 
-                {project.liveUrl && (
-                  <div className="flex items-center justify-between pt-1">
-                    <span className="t-label text-muted">Live Project</span>
-                    <CTAButton
-                      label="View Live"
-                      href={project.liveUrl}
-                      variant="main"
-                      className="px-4 py-1.5"
-                    />
-                  </div>
-                )}
+                
               </div>
             </div>
           </Container>
