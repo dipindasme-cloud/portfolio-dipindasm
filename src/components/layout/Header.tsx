@@ -2,6 +2,7 @@
 
 import { useRef, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 import RollUpText from "@/components/ui/RollUpText";
 import CTAButton from "../ui/CTAButton";
@@ -18,6 +19,7 @@ export default function Header() {
   const [hidden, setHidden] = useState(false);
   const prevScroll = useRef(0);
   const { scrollY } = useScroll();
+  const pathname = usePathname();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const prev = prevScroll.current;
@@ -32,6 +34,11 @@ export default function Header() {
       if (!open) setHidden(false);
       return !open;
     });
+  };
+
+  const isActiveLink = (href: string) => {
+    if (href === "/") return pathname === "/";
+    return pathname.startsWith(href);
   };
 
   return (
@@ -55,7 +62,7 @@ export default function Header() {
         <nav className="hidden items-center gap-[1.5rem] md:flex">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href} className="focus-visible:outline-none">
-              <RollUpText label={link.label} />
+              <RollUpText label={link.label} isActive={isActiveLink(link.href)} />
             </Link>
           ))}
         </nav>

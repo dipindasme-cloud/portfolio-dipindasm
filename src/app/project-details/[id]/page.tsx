@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { projects } from "@/data/projects";
-import CTAButton from "@/components/ui/CTAButton";
+import NewTabButton from "@/components/ui/NewTabButton";
 import ProjectDetailsHeader from "@/components/layout/ProjectDetailsHeader";
 import Footer from "@/components/layout/Footer";
 import { TextGenerateEffect } from "@/components/ui/TextReveal";
@@ -53,7 +53,7 @@ export default async function ProjectDetailsPage({ params }: PageProps) {
             {project.liveUrl && (
                   <div className="flex items-center pt-2">
                    
-                    <CTAButton
+                    <NewTabButton
                       label="View Live"
                       href={project.liveUrl}
                       variant="primary"
